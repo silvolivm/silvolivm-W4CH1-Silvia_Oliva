@@ -5,6 +5,7 @@ import { Gentleman } from "../gentleman/gentleman";
 export function Info() {
   const title: string = `
 The gentleman`;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [gentlemanState, setSate] = useState(data);
   return (
     <>
@@ -20,7 +21,7 @@ The gentleman`;
           {gentlemanState.map((men) => (
             <Gentleman>
               men={men}
-              state={gentlemanState}
+              states={gentlemanState}
               setState={setSate}
               key={men.id}
             </Gentleman>
